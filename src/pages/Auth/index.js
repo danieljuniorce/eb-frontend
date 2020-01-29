@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
+import Login from "../../components/Login";
+
 class Auth extends Component {
   render() {
     return (
-      <div>
-        <h1>hello world</h1>
+      <div id="app">
+        <Login />
       </div>
     );
   }
