@@ -23,7 +23,7 @@ class Login extends Component {
       <Container id="app">
         <FormContainer>
           <Image src={logo} />
-          <Title>ACESSAR PORTAL EB</Title>
+          <Title>ACESSAR PORTAL</Title>
           <TitleSub>Brasil Game Online</TitleSub>
 
           <Form>
@@ -48,8 +48,8 @@ class Login extends Component {
           </Form>
 
           <ContainerLink>
-            <LinkRedirect href="#cadastrar">Cadastrar</LinkRedirect>
-            <LinkRedirect href="esqueci-senha">Esqueci a Senha</LinkRedirect>
+            <LinkRedirect href="/register">Cadastrar</LinkRedirect>
+            <LinkRedirect href="/password-reset">Esqueci a Senha</LinkRedirect>
           </ContainerLink>
 
           <FooterInform>

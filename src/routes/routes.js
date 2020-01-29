@@ -7,13 +7,15 @@ import { PrivateRoute } from "./private";
 /**
  * Pages
  */
-import AuthPage from "../pages/Auth";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 const Routes = () => (
   <Router>
     <Switch>
-      <PublicRoute path="/auth" component={AuthPage} />
-      <PublicRoute path="/" exact component={AuthPage} />
+      <PublicRoute path="/login" component={Login} />
+      <PublicRoute path="/" exact component={Login} />
+      <PublicRoute path="/register" component={Register} />
     </Switch>
   </Router>
 );
