@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 `;
 
@@ -58,13 +58,13 @@ export const Form = styled.form`
 `;
 
 export const FormGroup = styled.div`
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0 80px 0 80px;
 `;
 
 export const FormLabel = styled.label`
   color: #288a5c;
-  font-size: 20px;
+  font-size: 16px;
   display: block;
   font-weight: bold;
 `;
@@ -72,7 +72,7 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
   width: 100%;
   height: 32px;
-  font-size: 19px;
+  font-size: 15px;
   color: #666;
   border: 0;
   border-bottom: 1px solid #eee;
@@ -114,4 +114,30 @@ export const TitleInfo = styled.h3`
   margin-right: 10px;
   text-align: center;
   color: white;
+`;
+
+export const RegisterTextError = styled.p`
+  color: red;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+`;
+
+export const ContainerLink = styled.div`
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+`;
+
+export const LinkRedirect = styled.a`
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+
+  &:hover {
+    color: #4887b2;
+  }
 `;

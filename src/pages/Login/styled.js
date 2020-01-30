@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -99,5 +98,12 @@ export const FooterInform = styled.p`
   margin-top: 20px;
   color: red;
   font-size: 11px;
+  text-align: center;
+`;
+
+export const LoginErrorText = styled.p`
+  margin-top: 10px;
+  font-size: 16px;
+  color: red;
   text-align: center;
 `;
