@@ -56,10 +56,17 @@ class Login extends Component {
         this.setState({ loading: false, err: true, password: "" });
         return;
       }
-      console.log(response.data);
       this.setState({ loading: false, err: false });
 
-      login(response.data.token, response.data.user);
+      const { token, user } = response.data;
+
+      console.log(token);
+
+      login(token);
+      return this.props.history.push({
+        pathname: "/dashboard",
+        state: { userId: user }
+      });
     } catch (err) {}
   }
 
